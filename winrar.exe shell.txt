@@ -1,0 +1,5 @@
+"C:\Program Files\WinRAR\RAR.exe"  a -r -sfx -z"config.conf" LogicHealth_Devops_PrintSetup LogicHealth_Devops_PrintSetup.vbs
+
+
+
+
