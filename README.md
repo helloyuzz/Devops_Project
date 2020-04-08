@@ -1,7 +1,9 @@
 # .NET-ClickOnce-Publish-with-Winrar.exe
 
 ```doskey
-"C:\Program Files\WinRAR\RAR.exe"  a -r -sfx -z"config.conf" LogicHealth_Devops_PrintSetup LogicHealth_Devops_PrintSetup.vbs
+"C:\Program Files\WinRAR\RAR.exe"  a -r -sfx -z"config.conf" 
+                                   LogicHealth_Devops_PrintSetup 
+                                   LogicHealth_Devops_PrintSetup.vbs
 ```
 
 
