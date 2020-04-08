@@ -13,3 +13,8 @@ u = "http://192.168.0.123/ljk/CSSD.Packpress.PrintAssistant.application"
 objShell.Run("""C:\Windows\System32\rundll32.exe"" ""C:\Windows\System32\dfshim.dll"",ShOpenVerbApplication " & u)
 Set objShell = Nothing
 ```
+
+```regedit
+Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(
+                                  @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WinRAR.exe");
+```
