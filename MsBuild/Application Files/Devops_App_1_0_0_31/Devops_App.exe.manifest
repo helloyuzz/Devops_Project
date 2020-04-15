@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Devops_App.exe" version="1.0.0.31" publicKeyToken="43f37b06e922aa87" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:publisher="1tyu.com" co.v1:suiteName="Devops_App" asmv2:product="Devops_App" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Devops_App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Devops_App.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+             如果想要更改 Windows 用户帐户控制级别，请使用
+             以下节点之一替换 requestedExecutionLevel 节点。n
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 元素将禁用文件和注册表虚拟化。
+            如果你的应用程序需要此虚拟化来实现向后兼容性，则删除此
+            元素。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Devops_App.exe" size="11272">
+      <assemblyIdentity name="Devops_App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SY3aiBjMYe/3IkPTesfevT1xa2tEW6cW7cYu4isHczo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="com.yuzz.Devops.App.pfx" size="3744">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>11qQdpyvdG5J/IZGnQeCcu1OZL9I4z3lIp2QtROcMAM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Devops_App.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 设计此应用程序与其一起工作且已针对此应用程序进行测试的
+           Windows 版本的列表。取消评论适当的元素，
+           Windows 将自动选择最兼容的环境。 -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Devops.App" issuerKeyHash="dd8907f1c953355c2ef096a3bc613c3a3cb6542c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>727eZRveIPOIt86PBS3jfR4dXLk=</DigestValue></Reference></SignedInfo><SignatureValue>Tqg+8tASWXvcrET80gOAXFGwnJ3HcBRXPhXtn4lVpp1EZij4hl8wHR0TT6t+OkCT7ue/+mIPaUJkL+Jc2j43PUPooxr4ni1lSHe64g3fIWo2iVjGnXh4H5oi36w1LpQFA7RsSOb3bdMxzjGyC0hYc3GiY7FwasayLSpokSitx7fL8NTioWOotSZsse0UUiswy53jds5nSwWZ3LnUINSdvh2nZ94k0tuYX3yzeaV4ruhydTvjMdAdDdeGTNQ3f4B62CPbK4Pofz4lpgCH2DnGA/ZPkEYvoxsbqT9+gXA7fJIRDnmQ7RssBPfp3wxKmWXj+1YYNAnMvw1I+7qNiy3CIA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tYv7ZXOlfw7Iveo5eoUMNNDCjMvGBDTtz3kpGoqTeI5aJSTUgdC0bhcP3ROurSjerfDmn2wqTOSwGWSOpp93cDDSM0gOegHQdEvBVz7obbBVDswed6GLK9waUP65CWZOof1vYiafF83vE2wGyTo4lSTgNz60hJzysUEJt3XQet9jdTQ8w46j+5qrF6DZ3fvmLXhXJv3iHmTjZjnSjT3ILSM9KMc2o6kWgi65+/bZxkkMjAUZdwuTDBQmfp37vS+8zOMDrG4AVe+0oqc/t/YSaHXRUOeX6OPDeYFGahMzZOm0dn+37ziX1rgX8NaR4cU1pPANPPtbMXmxjDDwHdA3TQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b95c1d1e7de32d058fceb788f320de1b65de6eef" Description="" Url=""><as:assemblyIdentity name="Devops_App.exe" version="1.0.0.31" publicKeyToken="43f37b06e922aa87" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Devops.App</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>xrCBNe0R2u6+0BZn1aha5Ec++Gg=</DigestValue></Reference></SignedInfo><SignatureValue>cB3dJlm9rWZFfCkVLvjN8arAisUQAqjngTLZm0CAbBj2Q3qeRJNiXCNEc8hgJKcPJZugSNpGXQKrkVmz2J3A5P40+nLvOGtc7xIJXqdIm0VgycKiWZkDuWP4B4rCzNeVG07ye/agzhq/53F24tuTNS4CbAqZVrSJTazqB4yYoHUUWsNQTGgUFGEafhyPlvWPvubEseR9qsYkHv4TO3yDqNvEnJvaZQr2mCq6T7ueQa5pI9JKM+7i+8H7YJAVb/cjZf6HgdyEeD4kmILewAqes4I6ewcUMWJMojIifjCXCFFkRyxpgKcyYsKJLr1PQNiLfIs6iWaNXO5JiEItXHl2+g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tYv7ZXOlfw7Iveo5eoUMNNDCjMvGBDTtz3kpGoqTeI5aJSTUgdC0bhcP3ROurSjerfDmn2wqTOSwGWSOpp93cDDSM0gOegHQdEvBVz7obbBVDswed6GLK9waUP65CWZOof1vYiafF83vE2wGyTo4lSTgNz60hJzysUEJt3XQet9jdTQ8w46j+5qrF6DZ3fvmLXhXJv3iHmTjZjnSjT3ILSM9KMc2o6kWgi65+/bZxkkMjAUZdwuTDBQmfp37vS+8zOMDrG4AVe+0oqc/t/YSaHXRUOeX6OPDeYFGahMzZOm0dn+37ziX1rgX8NaR4cU1pPANPPtbMXmxjDDwHdA3TQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDjzCCAnugAwIBAgIQmcA/ar2IDahOJWQCiKUATTAJBgUrDgMCHQUAMF8xHzAdBgkqhkiG9w0BCQEWEGh0dHBzOi8vMXR5dS5jb20xHDAaBgkqhkiG9w0BCQEWDTF0eXVAbGl2ZS5jb20xHjAcBgNVBAMTFWh0dHBzOi8vMXR5dS5jb20gcm9vdDAeFw0yMDA0MTUwMjU4MDFaFw0zOTEyMzEyMzU5NTlaMBUxEzARBgNVBAMTCkRldm9wcy5BcHAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC1i/tlc6V/Dsi96jl6hQw00MKMy8YENO3PeSkaipN4jlolJNSB0LRuFw/dE66tKN6t8OafbCpM5LAZZI6mn3dwMNIzSA56AdB0S8FXPuhtsFUOzB53oYsr3BpQ/rkJZk6h/W9iJp8Xze8TbAbJOjiVJOA3PrSEnPKxQQm3ddB632N1NDzDjqP7mqsXoNnd++YteFcm/eIeZONmOdKNPcgtIz0oxzajqRaCLrn79tnGSQyMBRl3C5MMFCZ+nfu9L7zM4wOsbgBV77Sipz+39hJoddFQ55fo48N5gUZqEzNk6bR2f7fvOJfWuBfw1pHhxTWk8A08+1sxebGMMPAd0DdNAgMBAAGjgZgwgZUwgZIGA1UdAQSBijCBh4AQ6VOcVQMsJGYXYY9L4x2nWKFhMF8xHzAdBgkqhkiG9w0BCQEWEGh0dHBzOi8vMXR5dS5jb20xHDAaBgkqhkiG9w0BCQEWDTF0eXVAbGl2ZS5jb20xHjAcBgNVBAMTFWh0dHBzOi8vMXR5dS5jb20gcm9vdIIQN2M0w9sKd6tLyxMKiHpeBjAJBgUrDgMCHQUAA4IBAQCGSGwXIX3llNTmKxDvzQENrSJUbob/6j3Q6AdfpBCdqh6jB99pdKC3WRuA1cl0tcScct1shKOnq+H3c2XVw3Wf31hHfwlfKgTDOeqniX1MdaJbn4EKxpoBqC/ZjpT+YXA+h5rQ6cCsaNqg8eZVXYHNVxlKNN7z5YGYhJswFh5EvmhlH+7uLfIRwCPiLGI5RXHeBMMSoGFb8q+kDeg2qSXQZRVuiAul4bdKrfU+qxln3Qq6ZZREaUgj+1jC6DJH4IW46WA8q67q0YPrrYpGY9IoLI8uebcyAS0h+BPagRTKs20waFHpHX+gpD75Th3e5vXro4VPBTuR35PpwbJbbWD0</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

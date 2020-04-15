@@ -1,0 +1,14 @@
+根证书：
+makecert -r -pe -n "CN=1tyu root certificate,E=1tyu@live.com,E=https://1tyu.com" -sv 1tyu_root.pvk 1tyu_root.cer
+makecert -r -pe -n "CN=https://1tyu.com root,E=1tyu@live.com,E=https://1tyu.com" -sv yiran_root.pvk yiran_root.cer
+
+
+应用证书：
+makecert -n "CN=com.yuzz.Devops.App" -pe -iv 1tyu_root.pvk -ic 1tyu_root.cer -sky exchange -ss My
+makecert -n "CN=Devops.App" -pe -iv yiran_root.pvk -ic yiran_root.cer -sky exchange -ss My
+
+导出根证书（pfx）：
+pvk2pfx -pvk 1tyu_root.pvk -pi cssd123 -spc 1tyu_root.cer
+
+Pwd:
+cssd123
