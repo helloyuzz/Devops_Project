@@ -37,3 +37,28 @@ msbuild Devops_Project.sln
               /p:IISApplicationUrl="http://192.168.0.123/devops/com.yuzz.Devops.App.application" 
               /p:ApplicationVersion="1.0.0.26"
 ```
+
+
+```doskey
+D:\GitHub\Devops_Project>msbuild Devops_Project.sln 
+              /t:publish 
+              /p:PublishDir="D:/GitHub/Devops_Project/MsBuild/" 
+              /p:MapFileExtensions=true 
+              /p:TrustUrlParameters=true 
+              /p:UseApplicationTrust=true 
+              /p:CreateDesktopShortcut=true 
+              /p:BootstrapperEnabled=true 
+              /p:IsWebBootstrapper=true 
+              /p:InstallFrom=Web 
+              /p:UpdateEnabled=false 
+              /p:Configuration=Release 
+              /p:IISApplicationUrl="http://192.168.0.123/devops/Devops_App.application" 
+              /p:ApplicationVersion="1.0.0.31"
+```
+
+```c#
+  <UsingTask TaskName="Devops_Prebuild.AfterPublish" AssemblyFile="$(PublishDir)Devops_Prebuild.dll" />
+  <Target Name="AfterPublish">
+    <AfterPublish ExecPath="$(PublishDir)" IISApplicationUrl="$(IISApplicationUrl)" ApplicationVersion="$(ApplicationVersion)" PublisherName="$(PublisherName)" ProductName="$(ProductName)" />
+  </Target>
+ ```
